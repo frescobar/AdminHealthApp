@@ -10,6 +10,7 @@ import { PagesComponent } from './pages.component';
 import { ProgressComponent } from './progress/progress.component';
 import { FormsModule } from '@angular/forms';
 import { ComponentsModule } from "../components/components.module";
+import { AccountSettingsComponent } from "./account-settings/account-settings.component";
 
 
 
@@ -21,9 +22,10 @@ import { ComponentsModule } from "../components/components.module";
     Grafica1Component,
     PagesComponent,
     DashboardComponent,
+    AccountSettingsComponent
   ],
   imports: [
-  CommonModule,
+CommonModule,
     SharedModule,
     RouterModule
     ,FormsModule,
@@ -32,6 +34,8 @@ import { ComponentsModule } from "../components/components.module";
   ],
   exports: [PagesComponent,ProgressComponent,
     Grafica1Component,
-DashboardComponent,]
+DashboardComponent,
+Grafica1Component,
+AccountSettingsComponent]
 })
 export class PagesModule { }
